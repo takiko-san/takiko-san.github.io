@@ -8,47 +8,83 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
     <style media="screen">
+      body {
+        padding-top: 30px;/* 30px */
+        color: #4b4b52;
+        size: 15px
+      }
       .pub li {
-        margin: 15px 0px;
+        margin: 15px 0px
       }
       h1 {
-        font-family: "Script";
+        font-family: "Script"
       }
       h2 {
-        font-family: "Script";
+        font-family: "Script"
       }
       a {
-        color: deeppink;
+        color: deeppink
       }
       p {
-        margin-left: 20px;
+        margin-left: 20px
       }
       dt {
         margin-top: 10px;
-        margin-left: 20px;
+        margin-left: 20px
       }
       dd {
         margin-bottom: 10px;
-        margin-left: 45px;
+        margin-left: 45px
       }
       .author {
         font-weight: normal;
-        text-decoration: underline;
+        text-decoration: underline
       }
       .title {
-        font-weight: normal;
+        font-weight: normal
       }
       .award {
-        color: deeppink;
+        color: deeppink
       }
       .box {
         border: 1px;
         padding: 15px;
-        margin-bottom: 30px;
+        margin-bottom: 30px
+      }
+      .jumbotron {
+        background: #E6E6E6;
+        font-size: 16px
+      }
+      .navbar {
+        background: #867F7F;/*#585858*/
+      }
+      .navbar a {
+        color: white;
+        font-size: 16px
+      }
+      hr.bar_title {
+        background-color: #E6E6E6;
+        border: 1.5px #E6E6E6 solid;
+        color: #E6E6E6;
       }
     </style>
   </head>
   <body>
+
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="container">
+      <ul class="navbar-nav mr-auto">
+        <li class="active"><a class="nav-link" href="#">Top</a></li>
+        <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+        <li class="nav-item"><a class="nav-link" href="#biography">Biography</a></li>
+        <li class="nav-item"><a class="nav-link" href="#publication">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" href="#interest">Research interests</a></li>
+        <li class="nav-item"><a class="nav-link" href="#membership">Academic society membership</a></li>
+      </ul>
+      </div>
+      </div>
+    </nav>
     <!--　jumbotron　 -->
     <div class="jumbotron bg-muted">
       <div class="container bg-muted">
@@ -57,13 +93,12 @@
         <h1 class="text-center">Yuhta Takida / 瀧田 雄太</h1>
         </font>
         </div>
-      </div>
+    </div>
 
     <div class="container bg-white">
     <div class="box">
-    <h2 class="text-center">About me</h2>
-    <hr>
-    <font color=#4b4b52 size="3.5">
+    <h2 id="profile" class="text-center">Profile</h2>
+    <hr class="bar_title">
       <p>
         <ul>
         <li>Member of Saruwatari&Koyama Lab. <a href="http://www.sp.ipc.i.u-tokyo.ac.jp/en/" target="_blank"><img src="https://user-images.githubusercontent.com/30488846/47255865-e620a880-d4b1-11e8-9d58-e54c590f79b4.png"></a>, The University of Tokyo. （東京大学 猿渡小山研究室 <a href="http://www.sp.ipc.i.u-tokyo.ac.jp" target="_blank"><img src="https://user-images.githubusercontent.com/30488846/47255865-e620a880-d4b1-11e8-9d58-e54c590f79b4.png"></a>） </li>
@@ -73,15 +108,12 @@
         <li>Email: yuhta_takida †at† ipc.i.u-tokyo.ac.jp</li>
         </ul>
       </p>
-    </font>
     </div>
     </div>
-
     <div class="container bg-white">
     <div class="box">
-    <h2 class="text-center">Education</h2>
-    <hr>
-    <font color=#4b4b52 size="3.5">
+    <h2 id="biography" class="text-center">Biography</h2>
+    <hr class="bar_title">
     <dl>
       <dt>Apr. 2017 - Current</dt>
       <dd>
@@ -97,22 +129,20 @@
         </ul>
       </dd>
     </dl>
-    </font>
     </div>
     </div>
 
     <div class="container bg-white">
     <div class="box">
-    <h2 class="text-center">Publications</h2>
-    <hr>
+    <h2 id="publication" class="text-center">Publications</h2>
+    <hr class="bar_title">
 
     <h3>International conference papers</h3>
-    <font color=#4b4b52 size="3.5">
     <ol class="pub">
       <li>
         <span class="author">Yuhta Takida</span>, Shoichi Koyama, Hiroshi Saruwatari,
         <span class="title">&#8220;Exterior and interior sound field separation using convex optimization: comparison of signal models,</span>
-        in <span style="font-style: italic">Proceedings of European Signal Processing Conference (EUSIPCO)</span>, Rome, Sep. 2018, pp. 2567-2571.<br>
+        in <span style="font-style: italic">Proceedings of European Signal Processing Conference (EUSIPCO)</span>, Rome, Sep. 2018, pp. 2567-2571. <a href="https://ieeexplore.ieee.org/abstract/document/8552928" target="_blank"><img src="https://user-images.githubusercontent.com/30488846/47255865-e620a880-d4b1-11e8-9d58-e54c590f79b4.png"></a><br>
         <span class="award">[Grants for Researchers Attending International Conferences from Hara Research Foundation]</span>
       </li>
       <li>
@@ -122,10 +152,8 @@
         <span class="award">[Best Student Paper Award] [ONRG sponsored student travel grants]</span>
       </li>
     </ol>
-    </font>
 
     <h3>Domestic conference papers (in Japanese)</h3>
-    <font color=#4b4b52 size="3.5">
     <ol class="pub">
       <li>
         <span class="author">瀧田雄太</span>, 小山翔一, 植野夏樹, 猿渡洋,
@@ -164,15 +192,13 @@
         in <span style="font-style: italic">電気学会システム研究会</span>, June 2017, pp. 13-18.
       </li>
     </ol>
-    </font>
     </div>
     </div>
 
     <div class="container bg-white">
     <div class="box">
-    <h2  class="text-center">Reseach interests</h2>
-    <hr>
-    <font color=#4b4b52 size="3.5">
+    <h2  id="interest" class="text-center">Research interests</h2>
+    <hr class="bar_title">
     <ul>
       <li>Acoustic signal processing</li>
       <li>Microphone and loudspeaker array processing</li>
@@ -180,21 +206,18 @@
       <li>Sound field analysis</li>
       <li>Spatial audio</li>
     </ul>
-    </font>
 
     </div>
     </div>
 
     <div class="container bg-white">
     <div class="box">
-    <h2  class="text-center">Member</h2>
-    <hr>
-    <font color=#4b4b52 size="3.5">
+    <h2  id="membership" class="text-center">Academic society membership</h2>
+    <hr class="bar_title">
     <ul>
       <li>Institute of Electrical and Electronic Engineers (IEEE) <a href="https://www.ieee.org/" target="_blank"><img src="https://user-images.githubusercontent.com/30488846/47255865-e620a880-d4b1-11e8-9d58-e54c590f79b4.png"></a></li>
       <li>Acoustical Society of Japan (ASJ) <a href="http://www.asj.gr.jp/" target="_blank"><img src="https://user-images.githubusercontent.com/30488846/47255865-e620a880-d4b1-11e8-9d58-e54c590f79b4.png"></a></li>
     </ul>
-    </font>
 
     </div>
     </div>
